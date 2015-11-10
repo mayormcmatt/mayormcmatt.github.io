@@ -6,3 +6,7 @@
 .spacerBackground {
     background-color: #000;
 }
+
+.rowProp {
+    height: 5em;
+}
