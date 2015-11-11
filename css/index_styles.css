@@ -1,6 +1,30 @@
 /*LOGO STYLING*/
-.greenBase {
+.stemGreen {
+    background-color: #99AF3D;
+}
+
+.greenLight {
+    background-color: #5F8447;
+}
+
+.greenMed {
     background-color: #547C36;
+}
+
+.greenDarkest {
+    background-color: #192809;
+}
+
+.leafLightGreen {
+    background-color: #63842D;
+}
+
+.leafMedGreen {
+    background-color: #335018;
+}
+
+.leafDarkGreen {
+    background-color: #1C3707;
 }
 
 .spacerBackground {
