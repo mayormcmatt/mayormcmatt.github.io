@@ -105,3 +105,7 @@
         color: black;
     }
 }
+
+.titleTextArea {
+    list-style-type: none;
+}
