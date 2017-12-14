@@ -1,10 +1,21 @@
 #mainContainer {
     width: 100%;
-    height: 3000px;
+    height: auto;
 }
 
 /* Space BG */
+#spaceContainer {
+    height: 100vh;
+    width: 100%;
+    background: #081f35;
+}
 #stars {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Bio section */
+#bioContainer {
     height: 100vh;
     width: 100%;
 }
