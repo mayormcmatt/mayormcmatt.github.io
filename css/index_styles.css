@@ -3,18 +3,164 @@
     height: auto;
 }
 
+
 /* Space BG */
+
 #spaceContainer {
     height: 100vh;
     width: 100%;
     background: #081f35;
 }
+
 #stars {
     height: 100vh;
     width: 100%;
 }
 
+
+/* Astronaut Matt! */
+
+#astroMatt {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    height: 45vw;
+    width: 35vw;
+}
+
+.bodyPosition {
+    position: relative;
+}
+
+.bodyPosition .bodyPart {
+    position: absolute;
+    /* border: 2px solid #666; */
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.backHelmet {
+    top: 0;
+    left: 0;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 46%;
+    transform: rotate(-15deg);
+    overflow: hidden;
+}
+
+.facePlate {
+    top: 2vw;
+    left: 4vw;
+    height: 10vw;
+    width: 11vw;
+    background-color: #46381A;
+    border-radius: 30%;
+    overflow: hidden;
+}
+
+.facePlate .facePlateReflection {
+    top: -3vw;
+    left: -5vw;
+    height: 10vw;
+    width: 15vw;
+    border-radius: 50%;
+    border: none;
+    background-color: #876929;
+}
+
+.bodyBase {
+    top: 12vw;
+    left: 3vw;
+    height: 15vw;
+    width: 20vw;
+    transform: rotate(-25deg);
+    z-index: 3;
+    border-radius: 20%;
+}
+
+.bodyAbs {
+    top: 19vw;
+    left: 7vw;
+    height: 15vw;
+    width: 20vw;
+    transform: rotate(-34deg);
+    border-radius: 20%;
+    z-index: 3;
+}
+
+.leftLegUpper {
+    top: 26vw;
+    left: 23vw;
+    height: 15vw;
+    width: 10vw;
+    transform: rotate(-45deg);
+    z-index: 2;
+    border-radius: 20%;
+}
+
+.leftLegLower {
+    top: 34vw;
+    left: 28vw;
+    height: 14vw;
+    width: 9vw;
+    transform: rotate(-12deg);
+    border-radius: 20%;
+}
+
+.rightLeg {
+    top: 31vw;
+    left: 12vw;
+    height: 20vw;
+    width: 11vw;
+    border-radius: 20%;
+    transform: rotate(-10deg);
+}
+
+.leftArmUpper {
+    top: 12vw;
+    left: 14vw;
+    height: 8vw;
+    width: 15vw;
+    border-radius: 25%;
+    transform: rotate(30deg);
+    z-index: 2;
+}
+
+.leftArmLower {
+    top: 14vw;
+    left: 24vw;
+    height: 8vw;
+    width: 12vw;
+    border-radius: 25%;
+    transform: rotate(-10deg);
+    z-index: 2;
+}
+
+.rightArmUpper {
+    top: 15vw;
+    left: -6vw;
+    height: 8vw;
+    width: 13vw;
+    border-radius: 25%;
+    transform: rotate(10deg);
+    z-index: 3;
+}
+
+.rightArmLower {
+    top: 11vw;
+    left: -13vw;
+    height: 8vw;
+    width: 14vw;
+    border-radius: 25%;
+    transform: rotate(50deg);
+    z-index: 3;
+}
+
 /* Bio section */
+
 #bioContainer {
     height: 100vh;
     width: 100%;
