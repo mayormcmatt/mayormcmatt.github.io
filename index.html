@@ -16,6 +16,14 @@
     <div id="mainContainer">
         <div id="spaceContainer">
             <canvas id="stars"></canvas>
+            <div id="floatingWrench">
+                <div class="wrenchContainer">
+                    <div class="wrenchHandle">
+                        <div class="handleWrap"></div>
+                    </div>
+                </div>
+                <div class="wrenchHead"></div>
+            </div>
             <div id="astroMatt">
                 <div class="bodyPosition">
                     <!-- helmet -->
@@ -43,10 +51,18 @@
                     <!-- left arm -->
                     <div class="bodyPart bgWhite leftArmUpper"></div>
                     <div class="bodyPart bgWhite leftArmLower"></div>
+                    <div class="bodyPart bgWhite leftHandMitt"></div>
+                    <div class="bodyPart bgWhite leftHandThumb"></div>
 
                     <!-- right arm -->
-                    <div class="bodyPart bgWhite rightArmUpper"></div>
-                    <div class="bodyPart bgWhite rightArmLower"></div>
+                    <div class="armContainer bodyPart">
+                        <div id="waveArm">
+                            <div class="bodyPart bgWhite rightArmUpper"></div>
+                            <div class="bodyPart bgWhite rightArmLower"></div>
+                            <div class="bodyPart bgWhite rightHandMitt"></div>
+                            <div class="bodyPart bgWhite rightHandThumb"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

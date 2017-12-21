@@ -7,6 +7,7 @@
 /* Space BG */
 
 #spaceContainer {
+    position: relative;
     height: 100vh;
     width: 100%;
     background: #081f35;
@@ -139,9 +140,22 @@
     z-index: 2;
 }
 
-.rightArmUpper {
-    top: 15vw;
+.armContainer {
+    top: 16vw;
     left: -6vw;
+}
+
+#waveArm {
+    position: relative;
+    height: 8vw;
+    width: 13vw;
+    transform: rotate(10deg);
+    transform-origin: right;
+}
+
+.rightArmUpper {
+    top: 0vw;
+    left: 0vw;
     height: 8vw;
     width: 13vw;
     border-radius: 25%;
@@ -150,13 +164,134 @@
 }
 
 .rightArmLower {
-    top: 11vw;
-    left: -13vw;
+    top: -4vw;
+    left: -7vw;
     height: 8vw;
     width: 14vw;
     border-radius: 25%;
     transform: rotate(50deg);
     z-index: 3;
+}
+
+#floatingWrench {
+    position: absolute;
+    left: 5vw;
+    top: 45vw;
+    -webkit-animation: wrenchRotation 10s infinite;
+    -moz-animation: wrenchRotation 10s infinite;
+    -ms-animation: wrenchRotation 10s infinite;
+    animation: wrenchRotation 10s infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+.wrenchContainer {
+    position: relative;
+}
+
+.wrenchHandle {
+    position: absolute;
+    left: -5vw;
+    height: 2vw;
+    width: 7vw;
+    background-color: #777;
+}
+
+.handleWrap {
+    height: 1.5vw;
+    width: 80%;
+    background-color: #333;
+    margin: 0.2vw 0.7vw;
+}
+
+.wrenchHead {
+    position: absolute;
+    top: -1.5vw;
+    left: 1.8vw;
+    width: 0vw;
+    height: 0vw;
+    border-right: 2.5vw solid transparent;
+    border-top: 2.5vw solid #777;
+    border-left: 2.5vw solid #777;
+    border-bottom: 2.5vw solid #777;
+    border-top-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    border-bottom-left-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
+}
+
+.leftHandMitt {
+    top: 15vw;
+    left: 34vw;
+    height: 5vw;
+    width: 8vw;
+    border-radius: 45%;
+    transform: rotate(-10deg);
+}
+
+.leftHandThumb {
+    top: 13.5vw;
+    left: 33.5vw;
+    height: 3vw;
+    width: 6vw;
+    border-radius: 45%;
+    transform: rotate(-65deg);
+}
+
+.rightHandMitt {
+    top: -9vw;
+    left: -11vw;
+    height: 5vw;
+    width: 8vw;
+    border-radius: 45%;
+    transform: rotate(49deg);
+}
+
+.rightHandThumb {
+    top: -8vw;
+    left: -7vw;
+    height: 3vw;
+    width: 6vw;
+    border-radius: 45%;
+    transform: rotate(90deg);
+}
+
+@-webkit-keyframes wrenchRotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes wrenchRotation {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes wrenchRotation {
+    from {
+        -ms-transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@keyframes wrenchRotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Bio section */
