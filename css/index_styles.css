@@ -28,6 +28,12 @@
 
 .orbitronText {
     font-family: 'Orbitron', 'Times New Roman', Times, serif;
+    letter-spacing: 0.2vw;
+    font-weight: 100;
+}
+
+.redText {
+    color: red;
 }
 
 .profileContainer {
