@@ -26,19 +26,19 @@
     font-family: 'Raleway', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.merriweatherText {
-    font-family: 'Merriweather', 'Times New Roman', Times, serif;
+.orbitronText {
+    font-family: 'Orbitron', 'Times New Roman', Times, serif;
 }
 
 .profileContainer {
     position: absolute;
     color: white;
-    top: 10vw;
+    top: 30vw;
     right: 10vw;
 }
 
 .profileContainer h1 {
-    font-size: 4vw;
+    font-size: 5vw;
     margin: 0;
 }
 
