@@ -10,7 +10,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background: #081f35;
+    background: #131316;
     overflow: hidden;
 }
 
@@ -59,4 +59,9 @@
 #bioContainer {
     height: 100vh;
     width: 100%;
+    background-image: url(img/aurora-mountains-cropped.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
 }
