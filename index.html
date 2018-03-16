@@ -1,96 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Matthew Lopez, Web Guy</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Matthew Lopez, Web Guy</title>
 
-    <link rel="stylesheet" href="/css/index_styles.css">
-    <link rel="stylesheet" href="/css/astromatt.css">
-    <link rel="stylesheet" href="/css/animations.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="/css/index_styles.css">
+        <link rel="stylesheet" href="/css/astromatt.css">
+        <link rel="stylesheet" href="/css/animations.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron|Raleway" rel="stylesheet">
 
-    <script type="text/javascript" src="/js/space_bg.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-</head>
+        <script type="text/javascript" src="/js/space_bg.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    </head>
 
-<body>
-    <div id="mainContainer">
-        <div id="spaceContainer">
-            <canvas id="stars"></canvas>
+    <body>
+        <div id="mainContainer">
+            <div id="spaceContainer">
+                <canvas id="stars"></canvas>
 
-            <div class="profileContainer">
-                <h1 class="myName ralewayText">
-                    <span class="redText">M</span>atthew
-                    <span class="redText">L</span>opez</h1>
-                <h3 class="myTitle orbitronText">Front-end Web Developer
-                    <span class="blinkingCursor">_</span>
-                </h3>
-            </div>
-
-            <div id="wrenchMoveContainer">
-                <div id="rotatingWrench">
-                    <div class="wrenchContainer">
-                        <div class="wrenchHandle">
-                            <div class="handleWrap"></div>
-                        </div>
-                    </div>
-                    <div class="wrenchHead"></div>
+                <div class="profileContainer">
+                    <h1 class="myName ralewayText">
+                        <span class="redText">M</span>atthew
+                        <span class="redText">L</span>opez</h1>
+                    <h3 class="myTitle orbitronText">Front-end Web Developer
+                        <span class="blinkingCursor">_</span>
+                    </h3>
                 </div>
-            </div>
-            <div id="astroMatt">
-                <div class="bodyPosition">
-                    <!-- helmet -->
-                    <div class="bodyPart bgWhite backHelmet">
-                        <div class="bodyPosition">
-                            <div class="bodyPart facePlate">
-                                <div class="bodyPosition">
-                                    <div class="bodyPart facePlateReflection"></div>
+
+                <div id="wrenchMoveContainer">
+                    <div id="rotatingWrench">
+                        <div class="wrenchContainer">
+                            <div class="wrenchHandle">
+                                <div class="handleWrap"></div>
+                            </div>
+                        </div>
+                        <div class="wrenchHead"></div>
+                    </div>
+                </div>
+                <div id="astroMatt">
+                    <div class="bodyPosition">
+                        <!-- helmet -->
+                        <div class="bodyPart bgWhite backHelmet">
+                            <div class="bodyPosition">
+                                <div class="bodyPart facePlate">
+                                    <div class="bodyPosition">
+                                        <div class="bodyPart facePlateReflection"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- torso -->
+                        <div class="bodyPart bgWhite bodyBase"></div>
+                        <img class="unspacy" src="/img/unspacy.png" alt="">
+                        <div class="bodyPart bgWhite bodyAbs"></div>
+
+                        <!-- left leg -->
+                        <div class="bodyPart bgWhite leftLegUpper"></div>
+                        <div class="bodyPart bgWhite leftLegLower"></div>
+
+                        <!-- left foot -->
+                        <div class="bodyPart bgWhite leftFoot"></div>
+
+                        <!-- right leg -->
+                        <div class="bodyPart bgWhite rightLeg"></div>
+
+                        <!-- right foot -->
+                        <div class="bodyPart bgWhite rightFoot"></div>
+
+                        <!-- left arm -->
+                        <div class="bodyPart bgWhite leftArmUpper"></div>
+                        <div class="bodyPart bgWhite leftArmLower"></div>
+                        <div class="bodyPart bgWhite leftHandMitt"></div>
+                        <div class="bodyPart bgWhite leftHandThumb"></div>
+
+                        <!-- right arm -->
+                        <div class="armContainer bodyPart">
+                            <div id="waveArm">
+                                <div class="bodyPart bgWhite rightArmUpper"></div>
+                                <div class="bodyPart bgWhite rightArmLower"></div>
+                                <div class="bodyPart bgWhite rightHandMitt"></div>
+                                <div class="bodyPart bgWhite rightHandThumb"></div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- torso -->
-                    <div class="bodyPart bgWhite bodyBase"></div>
-                    <img class="unspacy" src="/img/unspacy.png" alt="">
-                    <div class="bodyPart bgWhite bodyAbs"></div>
+            <div id="bioContainer">
+                <h2 class="ralewayText">My Experience</h2>
 
-                    <!-- left leg -->
-                    <div class="bodyPart bgWhite leftLegUpper"></div>
-                    <div class="bodyPart bgWhite leftLegLower"></div>
+                <div class="expContainer">
+                    <div class="expBox">
+                        <div>
+                            <h3 class="ralewayText">Leadership</h3>
 
-                    <!-- left foot -->
-                    <div class="bodyPart bgWhite leftFoot"></div>
+                            <h4>Tech Lead</h4>
+                            <h4>Front-End Engineering (Marketing)</h4>
+                            <h4>Macys.com</h4>
 
-                    <!-- right leg -->
-                    <div class="bodyPart bgWhite rightLeg"></div>
+                            <ol>
+                                <li>Steering the development aspects of most online marketing content</li>
+                                <li>Led adoption of responsive web guidelines in partnership with NYC design team</li>
+                                <li>Primary triage and troubleshooting point-of-contact</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="expBox">
+                        <div>
+                            <h3 class="ralewayText">Development</h3>
 
-                    <!-- right foot -->
-                    <div class="bodyPart bgWhite rightFoot"></div>
+                            <h4>Senior Front-End Engineer</h4>
+                            <h4>Front-End Engineering (Marketing)</h4>
+                            <h4>Macys.com</h4>
 
-                    <!-- left arm -->
-                    <div class="bodyPart bgWhite leftArmUpper"></div>
-                    <div class="bodyPart bgWhite leftArmLower"></div>
-                    <div class="bodyPart bgWhite leftHandMitt"></div>
-                    <div class="bodyPart bgWhite leftHandThumb"></div>
-
-                    <!-- right arm -->
-                    <div class="armContainer bodyPart">
-                        <div id="waveArm">
-                            <div class="bodyPart bgWhite rightArmUpper"></div>
-                            <div class="bodyPart bgWhite rightArmLower"></div>
-                            <div class="bodyPart bgWhite rightHandMitt"></div>
-                            <div class="bodyPart bgWhite rightHandThumb"></div>
+                            <ol>
+                                <li>Helped incept bi-weekly collaboration lab between marketing devs and design</li>
+                                <li>Developed & updated catalog of features for marketing project managers</li>
+                                <li>Keeper of department Git repository; point-of-contact for merges and reviews</li>
+                                <li>Developed marketing pages using HTML, CSS, and JavaScript</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div id="bioContainer"></div>
-    </div>
-</body>
+    </body>
 
 </html>
