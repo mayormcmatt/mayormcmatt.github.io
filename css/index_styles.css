@@ -124,3 +124,130 @@ li {
 .expBox li:before {
     content: "\2192";
 }
+
+#bioContainer h2,
+.expContainer h3,
+.expContainer h4,
+.expBox li {
+    color: #222;
+    font-weight: 100;
+}
+
+#bioContainer h2 {
+    margin: 2vw 0;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.bioTopContainer {
+    height: 65%;
+}
+
+.expContainer {
+    display: flex;
+}
+
+.contactContainer {
+    height: 15%;
+    width: 100%;
+}
+
+.resumeContainer:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    height: 1px;
+    width: 75%;
+    border-bottom: 1px solid #333;
+}
+
+.expBox,
+.contactContainer div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.expBox div {
+    width: 50%;
+}
+
+.expContainer h3 {
+    margin: 0 0 1vw 0;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.expContainer h4 {
+    margin: 0;
+    font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2vw;
+}
+
+.expBox ol,
+li {
+    margin: 0.5vw 0 0 0;
+    padding: 0;
+}
+
+.expBox li {
+    list-style: none;
+    font-size: 1vw;
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+.expBox li:before {
+    content: "\2192";
+}
+
+.rawkitship {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rawkitship img {
+    position: absolute;
+    width: 8vw;
+    transform: translateX(-50%);
+    left: 50%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.resumeContainer {
+    height: 20%;
+}
+
+.resumeContainer h4 {
+    margin: 1vw 0 1vw 0;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+.getResume {
+    display: block;
+    margin: 0 auto 2vw auto;
+    border: 1px solid #333;
+    border-radius: 5px;
+    height: 5vw;
+    width: 15vw;
+    font-size: 1.5vw;
+}
+
+.contactContainer {
+    font-size: 1.2vw;
+    display: flex;
+}
+
+.contactContainer a,
+.contactContainer p {
+    margin: 0;
+}
