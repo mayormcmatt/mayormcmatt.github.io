@@ -257,6 +257,18 @@ li {
 /* Phone media queries */
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+    #astroMatt {
+        top: 30%;
+    }
+
+    .profileContainer h1 {
+        font-size: 8vw;
+    }
+
+    .profileContainer h3 {
+        font-size: 3.3vw;
+    }
+
     #bioContainer {
         height: auto;
         display: grid;
