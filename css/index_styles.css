@@ -256,7 +256,7 @@ li {
 
 /* Phone media queries */
 
-@media only screen and (min-width: 375px) and (max-width: 767px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
     .profileContainer h1 {
         font-size: 8vw;
     }
@@ -269,10 +269,18 @@ li {
         height: auto;
         display: grid;
         grid-template-columns: 5% auto 5%;
+        grid-template-areas:
+            ". biotop ."
+            ". leftexp ."
+            ". rightexp ."
+            ". resume ."
+            ". contact ."
     }
+
     .rawkitship {
         display: none;
     }
+
     .bioTopContainer,
     .expBox,
     .resumeContainer,
@@ -335,13 +343,17 @@ li {
 
 /* Tablet media queries */
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
     .profileContainer h1 {
         font-size: 7vw;
     }
 
     .profileContainer h3 {
         font-size: 2.8vw;
+    }
+
+    .rawkitship {
+        display: none;
     }
 
     .bioTopContainer {
