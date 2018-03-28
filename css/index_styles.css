@@ -31,7 +31,7 @@
 }
 
 .openSansText {
-    font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .redText {
@@ -256,11 +256,7 @@ li {
 
 /* Phone media queries */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
-    #astroMatt {
-        top: 30%;
-    }
-
+@media only screen and (min-width: 375px) and (max-width: 767px) {
     .profileContainer h1 {
         font-size: 8vw;
     }
@@ -339,4 +335,98 @@ li {
 
 /* Tablet media queries */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 2) {}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .profileContainer h1 {
+        font-size: 7vw;
+    }
+
+    .profileContainer h3 {
+        font-size: 2.8vw;
+    }
+
+    .bioTopContainer {
+        grid-area: biotop;
+    }
+
+    .leftSide {
+        grid-area: leftexp;
+    }
+
+    .rightSide {
+        grid-area: rightexp;
+    }
+
+    .resumeContainer {
+        grid-area: resume;
+        height: auto;
+    }
+
+    .contactContainer {
+        grid-area: contact;
+    }
+
+    #bioContainer {
+        display: grid;
+        grid-template-columns: 5% 1fr 1fr 5%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". biotop biotop ."
+            ". leftexp rightexp ."
+            ". resume resume ."
+            ". contact contact ."
+    }
+
+    #bioContainer h2 {
+        font-size: 10vw;
+    }
+
+    #bioContainer h3 {
+        font-size: 6.5vw;
+        border-bottom: 1px solid black;
+        padding-bottom: 2vw;
+        width: 90%;
+    }
+
+    #bioContainer h4 {
+        font-size: 4.5vw;
+        margin: 0 0 0 3vw;
+    }
+
+    .bioTopContainer {
+        border-bottom: 5px solid black;
+        padding-bottom: 4vw;
+    }
+
+    .expBox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .expBox div {
+        width: 100%;
+    }
+
+    .expBox li {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin: 2vw 0;
+        width: 85%;
+    }
+
+    .getResume {
+        height: 15vw;
+        width: 40vw;
+        font-size: 5vw;
+        margin: 10vw auto 10vw auto
+    }
+
+    .contactContainer {
+        height: 7vw;
+        margin: 5vw 0;
+    }
+
+    .contactContainer a {
+        font-size: 3vw;
+    }
+}

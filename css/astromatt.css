@@ -215,7 +215,7 @@
     transform: rotate(-25deg) skew(2deg, 2deg);
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 767px) {
+@media only screen and (min-width: 375px) and (max-width: 1023px) {
     #spaceContainer #astroMatt {
         top: 30%;
     }
