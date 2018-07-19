@@ -1,152 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Matthew Lopez, Web Guy</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Matthew Lopez, Web Guy</title>
+		<!-- Add leading slash when pushing to GitHub! -->
+		<link rel="stylesheet" href="css/index_styles.css">
+		<link rel="stylesheet" href="css/astromatt.css">
+		<link rel="stylesheet" href="css/animations.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron|Raleway" rel="stylesheet">
 
-        <link rel="stylesheet" href="/css/index_styles.css">
-        <link rel="stylesheet" href="/css/astromatt.css">
-        <link rel="stylesheet" href="/css/animations.css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Orbitron|Raleway" rel="stylesheet">
+		<script type="text/javascript" src="js/space_bg.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	</head>
 
-        <script type="text/javascript" src="/js/space_bg.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    </head>
+	<body>
+		<div id="main-container">
+			<div class="hero-container">
+				<canvas id="stars"></canvas>
 
-    <body>
-        <div id="mainContainer">
-            <div id="spaceContainer">
-                <canvas id="stars"></canvas>
+				<div class="hero-container__title-container">
+					<h1 class="title-container__my-name ralewayText">
+						<span class="my-name--red-text">M</span>atthew
+						<span class="my-name--red-text">L</span>opez</h1>
+					<h2 class="title-container__my-title orbitron-text">Front-end Web Developer
+						<span class="blinking-cursor">_</span>
+					</h2>
+				</div>
 
-                <div class="profileContainer">
-                    <h1 class="myName ralewayText">
-                        <span class="redText">M</span>atthew
-                        <span class="redText">L</span>opez</h1>
-                    <h3 class="myTitle orbitronText">Front-end Web Developer
-                        <span class="blinkingCursor">_</span>
-                    </h3>
-                </div>
+				<div class="hero-container__wrench-move-container">
+					<div class="wrench-move-container__rotating-wrench">
+						<div class="rotating-wrench__wrench-container">
+							<div class="wrench-container__wrench-handle">
+								<div class="wrench-handle__handle-wrap"></div>
+							</div>
+						</div>
+						<div class="wrence-move-container__wrench-head"></div>
+					</div>
+				</div>
+				<div class="astro-matt">
+					<div class="body-position">
+						<!-- helmet -->
+						<div class="bodyPart bgWhite backHelmet">
+							<div class="bodyPosition">
+								<div class="bodyPart facePlate">
+									<div class="bodyPosition">
+										<div class="bodyPart facePlateReflection"></div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                <div id="wrenchMoveContainer">
-                    <div id="rotatingWrench">
-                        <div class="wrenchContainer">
-                            <div class="wrenchHandle">
-                                <div class="handleWrap"></div>
-                            </div>
-                        </div>
-                        <div class="wrenchHead"></div>
-                    </div>
-                </div>
-                <div id="astroMatt">
-                    <div class="bodyPosition">
-                        <!-- helmet -->
-                        <div class="bodyPart bgWhite backHelmet">
-                            <div class="bodyPosition">
-                                <div class="bodyPart facePlate">
-                                    <div class="bodyPosition">
-                                        <div class="bodyPart facePlateReflection"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						<!-- torso -->
+						<div class="bodyPart bgWhite bodyBase"></div>
+						<img class="unspacy" src="/img/unspacy.png" alt="">
+						<div class="bodyPart bgWhite bodyAbs"></div>
 
-                        <!-- torso -->
-                        <div class="bodyPart bgWhite bodyBase"></div>
-                        <img class="unspacy" src="/img/unspacy.png" alt="">
-                        <div class="bodyPart bgWhite bodyAbs"></div>
+						<!-- left leg -->
+						<div class="bodyPart bgWhite leftLegUpper"></div>
+						<div class="bodyPart bgWhite leftLegLower"></div>
 
-                        <!-- left leg -->
-                        <div class="bodyPart bgWhite leftLegUpper"></div>
-                        <div class="bodyPart bgWhite leftLegLower"></div>
+						<!-- left foot -->
+						<div class="bodyPart bgWhite leftFoot"></div>
 
-                        <!-- left foot -->
-                        <div class="bodyPart bgWhite leftFoot"></div>
+						<!-- right leg -->
+						<div class="bodyPart bgWhite rightLeg"></div>
 
-                        <!-- right leg -->
-                        <div class="bodyPart bgWhite rightLeg"></div>
+						<!-- right foot -->
+						<div class="bodyPart bgWhite rightFoot"></div>
 
-                        <!-- right foot -->
-                        <div class="bodyPart bgWhite rightFoot"></div>
+						<!-- left arm -->
+						<div class="bodyPart bgWhite leftArmUpper"></div>
+						<div class="bodyPart bgWhite leftArmLower"></div>
+						<div class="bodyPart bgWhite leftHandMitt"></div>
+						<div class="bodyPart bgWhite leftHandThumb"></div>
 
-                        <!-- left arm -->
-                        <div class="bodyPart bgWhite leftArmUpper"></div>
-                        <div class="bodyPart bgWhite leftArmLower"></div>
-                        <div class="bodyPart bgWhite leftHandMitt"></div>
-                        <div class="bodyPart bgWhite leftHandThumb"></div>
+						<!-- right arm -->
+						<div class="armContainer bodyPart">
+							<div id="waveArm">
+								<div class="bodyPart bgWhite rightArmUpper"></div>
+								<div class="bodyPart bgWhite rightArmLower"></div>
+								<div class="bodyPart bgWhite rightHandMitt"></div>
+								<div class="bodyPart bgWhite rightHandThumb"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                        <!-- right arm -->
-                        <div class="armContainer bodyPart">
-                            <div id="waveArm">
-                                <div class="bodyPart bgWhite rightArmUpper"></div>
-                                <div class="bodyPart bgWhite rightArmLower"></div>
-                                <div class="bodyPart bgWhite rightHandMitt"></div>
-                                <div class="bodyPart bgWhite rightHandThumb"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<div id="bioContainer">
+				<div class="bioTopContainer">
+					<h2 class="ralewayText">My Experience</h2>
+				</div>
 
-            <div id="bioContainer">
-                <div class="bioTopContainer">
-                    <h2 class="ralewayText">My Experience</h2>
-                </div>
+				<div class="expBox leftSide">
+					<div>
+						<h3 class="ralewayText">Leadership</h3>
 
-                <div class="expBox leftSide">
-                    <div>
-                        <h3 class="ralewayText">Leadership</h3>
+						<h4>Tech Lead</h4>
+						<h4>Front-End Engineering (Marketing)</h4>
+						<h4>Macys.com</h4>
 
-                        <h4>Tech Lead</h4>
-                        <h4>Front-End Engineering (Marketing)</h4>
-                        <h4>Macys.com</h4>
+						<ol>
+							<li class="openSansText">Steering the development aspects of most online marketing content</li>
+							<li class="openSansText">Led adoption of responsive web guidelines in partnership with NYC design team</li>
+							<li class="openSansText">Primary triage and troubleshooting point-of-contact</li>
+						</ol>
+					</div>
+				</div>
 
-                        <ol>
-                            <li class="openSansText">Steering the development aspects of most online marketing content</li>
-                            <li class="openSansText">Led adoption of responsive web guidelines in partnership with NYC design team</li>
-                            <li class="openSansText">Primary triage and troubleshooting point-of-contact</li>
-                        </ol>
-                    </div>
-                </div>
+				<div class="expBox rightSide">
+					<div>
+						<h3 class="ralewayText">Development</h3>
 
-                <div class="expBox rightSide">
-                    <div>
-                        <h3 class="ralewayText">Development</h3>
+						<h4>Senior Front-End Engineer</h4>
+						<h4>Front-End Engineering (Marketing)</h4>
+						<h4>Macys.com</h4>
 
-                        <h4>Senior Front-End Engineer</h4>
-                        <h4>Front-End Engineering (Marketing)</h4>
-                        <h4>Macys.com</h4>
+						<ol>
+							<li class="openSansText">Helped incept bi-weekly collaboration lab between marketing devs and design</li>
+							<li class="openSansText">Developed & updated catalog of features for marketing project managers</li>
+							<li class="openSansText">Keeper of department Git repository; point-of-contact for merges and reviews</li>
+							<li class="openSansText">Developed marketing pages using HTML, CSS, and JavaScript</li>
+						</ol>
+					</div>
+				</div>
 
-                        <ol>
-                            <li class="openSansText">Helped incept bi-weekly collaboration lab between marketing devs and design</li>
-                            <li class="openSansText">Developed & updated catalog of features for marketing project managers</li>
-                            <li class="openSansText">Keeper of department Git repository; point-of-contact for merges and reviews</li>
-                            <li class="openSansText">Developed marketing pages using HTML, CSS, and JavaScript</li>
-                        </ol>
-                    </div>
-                </div>
+				<div class="resumeContainer">
+					<button class="getResume ralewayText" type="submit" onclick="window.open('https://github.com/mayormcmatt/mayormcmatt.github.io/raw/master/img/Matthew_Lopez_Resume_2018.pdf')">Get Resum&#233;</button>
 
-                <div class="resumeContainer">
-                    <button class="getResume ralewayText" type="submit" onclick="window.open('https://github.com/mayormcmatt/mayormcmatt.github.io/raw/master/img/Matthew_Lopez_Resume_2018.pdf')">Get Resum&#233;</button>
+					<h4 class="openSansText">References? I've got a few. Just ask!</h4>
+				</div>
 
-                    <h4 class="openSansText">References? I've got a few. Just ask!</h4>
-                </div>
+				<div class="rawkitship">
+					<img src="/img/rocket-on-the-pad.png" alt="Blast off, rocket on the pad logo">
+				</div>
 
-                <div class="rawkitship">
-                    <img src="/img/rocket-on-the-pad.png" alt="Blast off, rocket on the pad logo">
-                </div>
-
-                <div class="contactContainer">
-                    <div>
-                        <a class="openSansText" href="mailto:matthew.is.riding@gmail.com">matthew.is.riding@gmail.com</a>
-                    </div>
-                    <div>
-                        <a href="tel:510-610-1980" class="openSansText">(510) 610-1980</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+				<div class="contactContainer">
+					<div>
+						<a class="openSansText" href="mailto:matthew.is.riding@gmail.com">matthew.is.riding@gmail.com</a>
+					</div>
+					<div>
+						<a href="tel:510-610-1980" class="openSansText">(510) 610-1980</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 
 </html>

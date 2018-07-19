@@ -1,185 +1,190 @@
-#wrenchMoveContainer {
-    animation: wrenchMove 60s infinite;
-    animation-timing-function: linear;
-    position: absolute;
-    left: -10vw;
-    top: 0vw;
-    z-index: 5;
+.hero-container__wrench-move-container {
+	animation: wrenchMove 60s infinite;
+	animation-timing-function: linear;
+	position: absolute;
+	left: -10vw;
+	top: 0vw;
+	z-index: 5;
 }
 
-#rotatingWrench {
-    position: absolute;
-    left: 5vw;
-    top: 45vw;
-    -webkit-animation: wrenchRotation 10s infinite;
-    -moz-animation: wrenchRotation 10s infinite;
-    -ms-animation: wrenchRotation 10s infinite;
-    animation: wrenchRotation 10s infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
-    animation-timing-function: linear;
+.wrench-move-container__rotating-wrench {
+	position: absolute;
+	left: 5vw;
+	/* top: 45vw; */
+	-webkit-animation: wrenchRotation 10s infinite;
+	-moz-animation: wrenchRotation 10s infinite;
+	-ms-animation: wrenchRotation 10s infinite;
+	animation: wrenchRotation 10s infinite;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	-ms-animation-timing-function: linear;
+	animation-timing-function: linear;
 }
 
-.wrenchContainer {
-    position: relative;
+.rotating-wrench__wrench-container {
+	position: relative;
 }
 
-.wrenchHandle {
-    position: absolute;
-    left: -5vw;
-    height: 2vw;
-    width: 7vw;
-    background-color: #777;
+.wrench-container__wrench-handle {
+	position: absolute;
+	left: -5vw;
+	height: 2vw;
+	width: 7vw;
+	background-color: #777;
 }
 
-.handleWrap {
-    height: 1.5vw;
-    width: 80%;
-    background-color: #333;
-    margin: 0.2vw 0.7vw;
+.wrench-handle__handle-wrap {
+	height: 1.5vw;
+	width: 80%;
+	background-color: #333;
+	margin: 0.2vw 0.7vw;
 }
 
-.wrenchHead {
-    position: absolute;
-    top: -1.5vw;
-    left: 1.8vw;
-    width: 0vw;
-    height: 0vw;
-    border-right: 2.5vw solid transparent;
-    border-top: 2.5vw solid #777;
-    border-left: 2.5vw solid #777;
-    border-bottom: 2.5vw solid #777;
-    border-top-left-radius: 2.5vw;
-    border-top-right-radius: 2.5vw;
-    border-bottom-left-radius: 2.5vw;
-    border-bottom-right-radius: 2.5vw;
+.wrence-move-container__wrench-head {
+	position: absolute;
+	top: -1.5vw;
+	left: 1.8vw;
+	width: 0vw;
+	height: 0vw;
+	border-right: 2.5vw solid transparent;
+	border-top: 2.5vw solid #777;
+	border-left: 2.5vw solid #777;
+	border-bottom: 2.5vw solid #777;
+	border-top-left-radius: 2.5vw;
+	border-top-right-radius: 2.5vw;
+	border-bottom-left-radius: 2.5vw;
+	border-bottom-right-radius: 2.5vw;
 }
 
 @-webkit-keyframes wrenchRotation {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-    }
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
 }
 
 @-moz-keyframes wrenchRotation {
-    from {
-        -moz-transform: rotate(0deg);
-    }
-    to {
-        -moz-transform: rotate(360deg);
-    }
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
 }
 
 @-ms-keyframes wrenchRotation {
-    from {
-        -ms-transform: rotate(0deg);
-    }
-    to {
-        -ms-transform: rotate(360deg);
-    }
+	from {
+		-ms-transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+	}
 }
 
 @-webkit-keyframes wrenchRotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
-
 
 /* Wrench floating left to right */
 
 @-moz-keyframes wrenchMove {
-    from {
-        transform: translate3d(-3vw, 0vw, 0);
-    }
-    to {
-        transform: translate3d(110vw, -10vw, 0);
-    }
+	from {
+		transform: translate3d(-3vw, 0vw, 0);
+	}
+	to {
+		transform: translate3d(110vw, -10vw, 0);
+	}
 }
 
 @-ms-keyframes wrenchMove {
-    from {
-        transform: translate3d(-3vw, 0vw, 0);
-    }
-    to {
-        transform: translate3d(110vw, -10vw, 0);
-    }
+	from {
+		transform: translate3d(-3vw, 0vw, 0);
+	}
+	to {
+		transform: translate3d(110vw, -10vw, 0);
+	}
 }
 
 @keyframes wrenchMove {
-    from {
-        transform: translate3d(-3vw, 0vw, 0);
-    }
-    to {
-        transform: translate3d(110vw, -10vw, 0);
-    }
+	from {
+		transform: translate3d(-3vw, 0vw, 0);
+	}
+	to {
+		transform: translate3d(110vw, -10vw, 0);
+	}
 }
 
 /* Blinking cursor */
 
-#spaceContainer .blinkingCursor {
-    color: white;
-    font-weight: 100;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
+.hero-container .blinking-cursor {
+	color: white;
+	font-weight: 100;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
 }
 
 @keyframes "blink" {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: white;
+	}
 }
 
 @-moz-keyframes blink {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: white;
+	}
 }
 
 @-webkit-keyframes "blink" {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: white;
+	}
 }
 
 @-ms-keyframes "blink" {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: white;
+	}
 }
 
 @-o-keyframes "blink" {
-    from,
-    to {
-        color: transparent;
-    }
-    50% {
-        color: white;
-    }
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: white;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	.hero-container__wrench-move-container {
+		top: 75vh;
+	}
 }
