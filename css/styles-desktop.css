@@ -19,11 +19,11 @@
 	.technologies-container {
 		grid-area: tech;
 	}
-	.resumeContainer {
+	.resume-container {
 		grid-area: resume;
 		height: auto;
 	}
-	.contactContainer {
+	.contact-container {
 		grid-area: contact;
 	}
 	.bio-container {
@@ -69,11 +69,11 @@
 		font-size: 5vw;
 		margin: 10vw auto 10vw auto
 	}
-	.contactContainer {
+	.contact-container {
 		height: 7vw;
 		margin: 5vw 0;
 	}
-	.contactContainer a {
+	.contact-container a {
 		font-size: 3vw;
 	}
 }
@@ -99,11 +99,6 @@
 }
 
 /* Profile text */
-
-.gh-text {
-	font-family: 'Grand Hotel', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-weight: 700;
-}
 
 .open-sans-text {
 	font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -224,12 +219,12 @@ li {
 	display: flex;
 }
 
-.contactContainer {
+.contact-container {
 	height: 15%;
 	width: 100%;
 }
 
-.resumeContainer:after {
+.resume-container:after {
 	content: "";
 	display: block;
 	margin: 0 auto;
@@ -241,7 +236,7 @@ li {
 }
 
 .exp-box,
-.contactContainer div {
+.contact-container div {
 	width: 50%;
 	display: flex;
 	justify-content: center;
@@ -298,11 +293,11 @@ li {
 	z-index: -1;
 }
 
-.resumeContainer {
+.resume-container {
 	height: 20%;
 }
 
-.resumeContainer h4 {
+.resume-container h4 {
 	margin: 1vw 0 1vw 0;
 	text-align: center;
 	font-size: 1.2vw;
@@ -319,12 +314,12 @@ li {
 	font-size: 1.5vw;
 }
 
-.contactContainer {
+.contact-container {
 	font-size: 1.2vw;
 	display: flex;
 }
 
-.contactContainer a {
+.contact-container a {
 	margin: 0;
 	color: black;
 	text-decoration: none;

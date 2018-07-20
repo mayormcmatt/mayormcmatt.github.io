@@ -1,47 +1,4 @@
 @import 'vars-mixins';
-.bio-container__top {
-	grid-area: biotop;
-}
-
-.left-side {
-	grid-area: leftexp;
-}
-
-.right-side {
-	grid-area: rightexp;
-}
-
-.technologies-container {
-	grid-area: tech;
-}
-
-.resumeContainer {
-	grid-area: resume;
-	height: auto;
-}
-
-.contactContainer {
-	grid-area: contact;
-}
-
-.bio-container {
-	display: grid;
-	grid-template-columns: 5% 1fr 1fr 5%;
-	grid-template-rows: auto;
-	grid-template-areas: ". biotop biotop ." ". leftexp rightexp ." ". tech tech ." ". resume resume ." ". contact contact .";
-	@include phone {
-		height: auto;
-		display: grid;
-		grid-template-columns: 5% auto 5%;
-		grid-template-areas: ". biotop ." ". leftexp ." ". rightexp ." ". tech ." ". resume ." ". contact ."
-	}
-}
-
-#main-container {
-	width: 100%;
-	height: auto;
-}
-
 nav,
 .navbar,
 .navbar__item {
@@ -63,270 +20,202 @@ nav,
 	}
 }
 
-/* Space BG */
-
-.hero-container {
-	position: relative;
-	height: 100vh;
-	width: 100%;
-	background: #131316;
-	overflow: hidden;
-	.hero-container__title-container {
+.hero-container__title-container {
+	@include phone {
+		width: 90vw;
+		top: 20vh;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	h1 {
 		@include phone {
-			width: 90vw;
-			top: 20vh;
-			right: 50%;
-			transform: translateX(50%);
+			font-size: 2.6em;
+			text-align: center;
 		}
-		h1 {
+	}
+	h2 {
+		@include phone {
+			font-size: 1.4em;
+			text-align: center;
+			font-weight: 100;
+		}
+	}
+}
+
+.bio-container {
+	@include phone {
+		height: auto;
+		display: grid;
+		grid-template-columns: 5% auto 5%;
+		grid-template-areas: ". biotop ." ". leftexp ." ". rightexp ." ". tech ." ". resume ." ". contact ."
+	}
+	h3 {
+		@include phone {
+			font-size: 1.6em;
+			border-bottom: 1px solid black;
+			padding-bottom: 0.5em;
+			width: 50%;
+			margin: 0.5em 0 0.5em 0;
+		}
+	}
+	h4 {
+		@include phone {
+			font-size: 1.2em;
+			margin: 0;
+		}
+	}
+}
+
+.bio-container__top,
+.exp-box,
+.technologies-container,
+.resume-container,
+.contact-container {
+	@include phone {
+		grid-column-start: 2;
+	}
+}
+
+.bio-container__top {
+	@include phone {
+		border-bottom: 3px solid black;
+		padding-bottom: 2vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 45vh;
+	}
+	p {
+		@include phone {
+			width: 85vw;
+			text-align: center;
+			font-size: 1.3em;
+		}
+	}
+	h2 {
+		@include phone {
+			font-size: 2.6em;
+		}
+	}
+	.gh-text {
+		@include phone {
+			font-family: $gh-text;
+			font-weight: 600;
+			letter-spacing: 0.1em;
+			font-style: italic;
+			font-size: 1.2em;
+		}
+	}
+}
+
+.exp-box {
+	@include phone {
+		width: 100%;
+	}
+	div {
+		@include phone {
+			width: auto;
+		}
+	}
+	li {
+		@include phone {
+			font-size: 1.1em;
+			line-height: 1em;
+			margin: 1em 0;
+			text-indent: -1.4em;
+			padding-left: 1.3em;
+		}
+	}
+	li:before {
+		@include phone {
+			margin-right: 0.4em;
+		}
+	}
+}
+
+.left-side {
+	@include phone {
+		height: 55vh;
+		border-bottom: 3px solid black;
+	}
+}
+
+.right-side {
+	@include phone {
+		height: 60vh;
+	}
+}
+
+.technologies-container {
+	@include phone {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		height: 40vh;
+	}
+	.technologies-container__logo {
+		@include phone {
+			width: 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		img {
 			@include phone {
-				font-size: 2.6em;
-				text-align: center;
+				width: 100%;
+			}
+		}
+		.technologies-container__logo--scale16 {
+			@include phone {
+				transform: scale(1.6);
+			}
+		}
+		.technologies-container__logo--scale07 {
+			@include phone {
+				transform: scale(0.7);
 			}
 		}
 	}
 }
 
-#stars {
-	height: 100vh;
-	width: 100%;
-}
-
-/* Profile text */
-
-.gh-text {
-	font-family: 'Grand Hotel', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-weight: 700;
-}
-
-.open-sans-text {
-	font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.my-name--red-text {
-	color: red;
-}
-
-.hero-container__title-container {
-	position: absolute;
-	color: white;
-	top: 30vw;
-	right: 20vh;
-}
-
-.hero-container__title-container h1 {
-	font-size: 5vw;
-	margin: 0;
-}
-
-.hero-container__title-container h2 {
-	text-align: center;
-	font-size: 1em;
-	margin: 1vw 0;
-}
-
-/* Bio section */
-
-.bio-container {
-	height: 100vh;
-	width: 100%;
-	position: relative;
-	/* background-image: url(/img/aurora-mountains-cropped.jpg); */
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	opacity: 1;
-}
-
-.bio-container h2,
-.expContainer h3,
-.expContainer h4,
-.exp-box li {
-	color: white;
-	font-weight: 100;
-}
-
-.bio-container h2 {
-	font-size: 2.5vw;
-	margin: 0;
-	text-align: center;
-}
-
-.expContainer {
-	display: flex;
-	height: 50vw;
-}
-
-.exp-box {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-}
-
-.exp-box div {
-	width: 50%;
-}
-
-.expContainer h3 {
-	margin: 0;
-	font-size: 1.5vw;
-	font-weight: 700;
-}
-
-.expContainer h4 {
-	margin: 0;
-	font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 1.2vw;
-}
-
-.exp-box ol,
-li {
-	margin: 0;
-	padding: 0;
-}
-
-.exp-box li {
-	list-style: none;
-	font-size: 1vw;
-	text-indent: -1em;
-	padding-left: 1em;
-}
-
-.exp-box li:before {
-	content: "\2192";
-}
-
-.bio-container h2,
-.expContainer h3,
-.expContainer h4,
-.exp-box li {
-	color: #222;
-	font-weight: 100;
-}
-
-.bio-container h2 {
-	margin: 2vw 0;
-	font-size: 2.5vw;
-	text-align: center;
-}
-
-.bio-container__top {
-	height: 65%;
-}
-
-.expContainer {
-	display: flex;
-}
-
-.contactContainer {
-	height: 15%;
-	width: 100%;
-}
-
-.resumeContainer:after {
-	content: "";
-	display: block;
-	margin: 0 auto;
-	left: 0;
-	top: 0;
-	height: 1px;
-	width: 75%;
-	border-bottom: 1px solid #333;
-}
-
-.exp-box,
-.contactContainer div {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-}
-
-.exp-box div {
-	width: 50%;
-}
-
-.expContainer h3 {
-	margin: 0 0 1vw 0;
-	font-size: 1.5vw;
-	font-weight: 700;
-}
-
-.expContainer h4 {
-	margin: 0;
-	font-family: 'Open Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: 1.2vw;
-}
-
-.exp-box ol,
-li {
-	margin: 0.5vw 0 0 0;
-	padding: 0;
-}
-
-.exp-box li {
-	list-style: none;
-	font-size: 1vw;
-	text-indent: -1em;
-	padding-left: 1em;
-}
-
-.exp-box li:before {
-	content: "\2192";
-}
-
-.rawkitship {
-	position: absolute;
-	height: 0;
-	width: 0;
-	top: 40%;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.rawkitship img {
-	position: absolute;
-	width: 8vw;
-	transform: translateX(-50%);
-	left: 50%;
-	opacity: 0.3;
-	z-index: -1;
-}
-
-.resumeContainer {
-	height: 20%;
-}
-
-.resumeContainer h4 {
-	margin: 1vw 0 1vw 0;
-	text-align: center;
-	font-size: 1.2vw;
-	font-weight: 100;
-}
-
-.getResume {
-	display: block;
-	margin: 0 auto 2vw auto;
-	border: 1px solid #333;
-	border-radius: 5px;
-	height: 5vw;
-	width: 15vw;
-	font-size: 1.5vw;
-}
-
-.contactContainer {
-	font-size: 1.2vw;
-	display: flex;
-}
-
-.contactContainer a {
-	margin: 0;
-	color: black;
-	text-decoration: none;
-}
-
-.bio-container h4 {
+.resume-container {
 	@include phone {
-		font-size: 1.2em;
-		margin: 0;
+		height: 30vh;
+	}
+	.resume-container:after {
+		@include phone {
+			width: 90%;
+		}
+	}
+	.resume-container__get-resume {
+		@include phone {
+			display: block;
+			margin: 10vw auto 10vw auto;
+			border: 1px solid #333;
+			border-radius: 5px;
+			height: 30%;
+			width: 40vw;
+			font-size: 1.2em;
+		}
+	}
+}
+
+.contact-container {
+	@include phone {
+		flex-wrap: wrap;
+		height: 10vh;
+		margin: 2vw 0;
+	}
+	div {
+		@include phone {
+			width: 100%;
+			margin: 1vh 0;
+		}
+	}
+	a {
+		@include phone {
+			font-size: 5vw;
+		}
 	}
 }
