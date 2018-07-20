@@ -1,0 +1,118 @@
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	/* Phone media queries */
+	nav,
+	.navbar,
+	.navbar__item {
+		height: 0;
+		margin: 0;
+		padding: 0;
+	}
+	.navbar {}
+	.navbar__item:first-child {}
+	.navbar__item__logo {
+		height: 12vw;
+		width: 12vw;
+		position: absolute;
+		z-index: 2;
+		top: 5vw;
+		left: 5vw;
+	}
+	.hero-container__title-container {
+		width: 90vw;
+		top: 20vh;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.hero-container__title-container h1 {
+		font-size: 2.6em;
+		text-align: center;
+	}
+	.hero-container__title-container h2 {
+		font-size: 1.4em;
+		text-align: center;
+		font-weight: 100;
+	}
+	.bio-container {
+		height: auto;
+		display: grid;
+		grid-template-columns: 5% auto 5%;
+		grid-template-areas: ". biotop ." ". leftexp ." ". rightexp ." ". resume ." ". contact ."
+	}
+	.bio-container__top,
+	.exp-box,
+	.resumeContainer,
+	.contactContainer {
+		grid-column-start: 2;
+	}
+	.bio-container__top {
+		border-bottom: 3px solid black;
+		padding-bottom: 2vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 50vh;
+	}
+	.bio-container__top p {
+		width: 80vw;
+		text-align: center;
+		font-size: 1.3em;
+	}
+	.bio-container__top h2 {
+		font-size: 2.6em;
+	}
+	.exp-box {
+		width: 100%;
+	}
+	.exp-box li:before {
+		margin-right: 0.4em;
+	}
+	.left-side {
+		height: 50vh;
+		border-bottom: 1px dotted black;
+	}
+	.exp-box div {
+		width: auto;
+	}
+	.exp-box li {
+		font-size: 1.1em;
+		line-height: 1em;
+		margin: 2vw 0;
+		text-indent: -1.4em;
+		padding-left: 1.3em;
+	}
+	.bio-container h3 {
+		font-size: 1.6em;
+		border-bottom: 1px solid black;
+		padding-bottom: 2vw;
+		width: 50%;
+		margin: 1em 0 0.5em 0;
+	}
+	.bio-container h4 {
+		font-size: 5vw;
+		margin: 0;
+	}
+	.getResume {
+		display: block;
+		margin: 10vw auto 10vw auto;
+		border: 1px solid #333;
+		border-radius: 5px;
+		height: 15vw;
+		width: 40vw;
+		font-size: 5vw;
+	}
+	.contactContainer {
+		flex-wrap: wrap;
+		height: 15vw;
+		margin: 2vw 0;
+	}
+	.contactContainer div {
+		width: 100%;
+		margin: 2vw 0;
+	}
+	.contactContainer a {
+		font-size: 4vw;
+	}
+	.resumeContainer:after {
+		width: 90%;
+	}
+}

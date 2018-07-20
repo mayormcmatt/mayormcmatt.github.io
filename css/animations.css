@@ -123,7 +123,7 @@
 
 /* Blinking cursor */
 
-.hero-container .blinking-cursor {
+.blinking-cursor {
 	color: white;
 	font-weight: 100;
 	-webkit-animation: 1s blink step-end infinite;
@@ -180,6 +180,66 @@
 	}
 	50% {
 		color: white;
+	}
+}
+
+.blinking-cursor--black-bg {
+	color: white;
+	font-weight: 100;
+	-webkit-animation: 1s blink-black step-end infinite;
+	-moz-animation: 1s blink-black step-end infinite;
+	-ms-animation: 1s blink-black step-end infinite;
+	-o-animation: 1s blink-black step-end infinite;
+	animation: 1s blink-black step-end infinite;
+}
+
+@keyframes "blink-black" {
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: black;
+	}
+}
+
+@-moz-keyframes blink-black {
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: black;
+	}
+}
+
+@-webkit-keyframes "blink-black" {
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: black;
+	}
+}
+
+@-ms-keyframes "blink-black" {
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: black;
+	}
+}
+
+@-o-keyframes "blink-black" {
+	from,
+	to {
+		color: transparent;
+	}
+	50% {
+		color: black;
 	}
 }
 
