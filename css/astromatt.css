@@ -215,7 +215,7 @@
 	transform: rotate(-25deg) skew(2deg, 2deg);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
 	.astro-matt {
 		top: 50%;
 		left: 50%;
