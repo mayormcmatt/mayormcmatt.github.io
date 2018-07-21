@@ -24,29 +24,35 @@
 	grid-area: contact;
 }
 
+#main-container {
+	width: 100%;
+	height: auto;
+}
+
 nav,
 .navbar,
 .navbar__item {
-	@include phone {
-		height: 0;
-		margin: 0;
-		padding: 0;
-	}
-	@include tablet {
-		height: 0;
-		margin: 0;
-		padding: 0;
-	}
+	height: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .navbar__item__logo {
+	height: 5em;
+	width: 5em;
+	position: absolute;
+	z-index: 2;
+	top: 1em;
+	left: 50%;
+	transform: translateX(-50%);
 	@include phone {
 		height: 12vw;
 		width: 12vw;
 		position: absolute;
 		z-index: 2;
-		top: 5vw;
+		top: 3vh;
 		left: 5vw;
+		transform: none;
 	}
 	@include tablet {
 		height: 12vw;
@@ -55,10 +61,28 @@ nav,
 		z-index: 2;
 		top: 5vw;
 		left: 5vw;
+		transform: none;
 	}
 }
 
+.hero-container {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: #131316;
+	overflow: hidden;
+}
+
+#stars {
+	height: 100vh;
+	width: 100%;
+}
+
 .hero-container__title-container {
+	position: absolute;
+	color: white;
+	top: 30vw;
+	right: 20vh;
 	@include phone {
 		width: 90vw;
 		top: 20vh;
@@ -71,8 +95,13 @@ nav,
 		right: 50%;
 		transform: translateX(50%);
 	}
+	.my-name--red-text {
+		color: red;
+	}
 	h1 {
 		font-family: $open-sans;
+		font-size: 6em;
+		margin: 0;
 		@include phone {
 			font-size: 2.6em;
 			text-align: center;
@@ -84,26 +113,34 @@ nav,
 	}
 	h2 {
 		font-family: $open-sans;
+		font-size: 3em;
+		font-weight: 100;
+		text-align: center;
+		margin: 1vw 0;
 		@include phone {
 			font-size: 1.4em;
 			text-align: center;
-			font-weight: 100;
 		}
 		@include tablet {
 			font-size: 2em;
-			font-weight: 100;
 		}
 	}
 }
 
 .bio-container {
+	height: 1200px;
+	width: 1200px;
+	margin: 0 auto; // display: flex;
+	// flex-direction: column;
 	@include phone {
+		width: 100%;
 		height: auto;
 		display: grid;
 		grid-template-columns: 5% auto 5%;
 		grid-template-areas: ". biotop ." ". leftexp ." ". rightexp ." ". tech ." ". resume ." ". contact ."
 	}
 	@include tablet {
+		width: 100%;
 		display: grid;
 		grid-template-columns: 5% 1fr 1fr 5%;
 		grid-template-rows: auto;
@@ -111,11 +148,13 @@ nav,
 	}
 	h3 {
 		font-family: $open-sans;
+		font-size: 2em;
+		border-bottom: 1px solid black;
+		width: 50%;
 		@include phone {
 			font-size: 1.6em;
 			border-bottom: 1px solid black;
 			padding-bottom: 0.5em;
-			width: 50%;
 			margin: 0.5em 0 0.5em 0;
 		}
 		@include tablet {
@@ -126,6 +165,8 @@ nav,
 		}
 	}
 	h4 {
+		font-size: 1.4em;
+		margin: 0.3em 0;
 		@include phone {
 			font-size: 1.2em;
 			margin: 0;
@@ -149,6 +190,8 @@ nav,
 }
 
 .bio-container__top {
+	height: 225px;
+	margin-top: 5em;
 	@include phone {
 		border-bottom: 3px solid black;
 		padding-bottom: 2vh;
@@ -156,24 +199,26 @@ nav,
 		flex-direction: column;
 		align-items: center;
 		height: 45vh;
+		margin-top: 1em;
 	}
 	@include tablet {
 		height: 25vh;
+		margin-top: 1em;
 	}
 	p {
+		font-size: 1.5em;
 		.gh-text {
 			font-family: $gh-text;
+			font-size: 1.2em;
 			@include phone {
 				font-weight: 600;
 				letter-spacing: 0.1em;
 				font-style: italic;
-				font-size: 1.2em;
 			}
 			@include tablet {
 				font-weight: 600;
 				letter-spacing: 0.1em;
 				font-style: italic;
-				font-size: 1.2em;
 			}
 		}
 		font-family: $open-sans;
@@ -190,8 +235,11 @@ nav,
 	}
 	h2 {
 		font-family: $open-sans;
+		font-size: 3.5em;
+		text-align: center;
 		@include phone {
 			font-size: 2.6em;
+			margin: 0;
 		}
 		@include tablet {
 			font-size: 3.5em;
@@ -200,15 +248,29 @@ nav,
 }
 
 .exp-box {
+	float: left;
+	margin-bottom: 5em;
+	width: 50%;
+	display: flex;
+	justify-content: center;
 	@include phone {
+		float: none;
+		display: block;
+		margin-bottom: 0;
+		float: none;
 		width: 100%;
 	}
 	@include tablet {
+		float: none;
+		display: block;
+		margin-bottom: 0;
+		float: none;
 		width: 100%;
 		height: 75vh;
 		;
 	}
 	div {
+		width: 80%;
 		@include phone {
 			width: auto;
 		}
@@ -216,8 +278,18 @@ nav,
 			width: auto;
 		}
 	}
+	ol {
+		padding: 0;
+	}
 	li {
 		font-family: $open-sans;
+		font-size: 1.2em;
+		text-indent: -1.4em;
+		padding-left: 1.3em;
+		margin: 0.5em 0 0 0;
+		color: #222;
+		font-weight: 100;
+		list-style: none;
 		@include phone {
 			font-size: 1.1em;
 			line-height: 1em;
@@ -227,17 +299,14 @@ nav,
 		}
 		@include tablet {
 			font-size: 1.4em;
+			margin: 1em 0;
 			text-indent: -1.2em;
 			padding-left: 1.3em;
 		}
 	}
 	li:before {
-		@include phone {
-			margin-right: 0.4em;
-		}
-		@include tablet {
-			margin-right: 0.4em;
-		}
+		margin-right: 0.4em;
+		content: "\2192";
 	}
 }
 
@@ -255,38 +324,49 @@ nav,
 }
 
 .technologies-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	height: 150px;
+	width: 100%;
+	margin-bottom: 5em;
 	@include phone {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		height: 40vh;
+		margin-bottom: 0;
 	}
 	@include tablet {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		height: 25vh;
+		height: 20vh;
+		margin: 3em 0 0 0;
 	}
 	.technologies-container__logo {
+		width: 20%;
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		@include phone {
 			width: 30%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
 		}
 		@include tablet {
 			width: 20%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
 		}
 		img {
+			height: 150px;
 			@include phone {
+				height: auto;
 				width: 100%;
 			}
 			@include tablet {
+				height: auto;
 				width: 80%;
 			}
 		}
@@ -311,6 +391,10 @@ nav,
 
 .resume-container {
 	font-family: $open-sans;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 	@include phone {
 		height: 30vh;
 	}
@@ -321,7 +405,20 @@ nav,
 		align-items: center;
 		justify-content: space-around;
 	}
-	.resume-container:after {
+	h4 {
+		text-align: center;
+		font-weight: 100;
+		font-size: 1.5em;
+	}
+	&:after {
+		content: "";
+		display: block;
+		margin: 0 auto;
+		left: 0;
+		top: 0;
+		height: 1px;
+		width: 100%;
+		border-bottom: 1px solid #333;
 		@include phone {
 			width: 90%;
 		}
@@ -329,6 +426,10 @@ nav,
 	.resume-container__get-resume {
 		background-color: #333;
 		color: white;
+		height: 60px;
+		width: 150px;
+		margin: 0 auto;
+		font-size: 1.2em;
 		@include phone {
 			display: block;
 			margin: 10vw auto 10vw auto;
@@ -336,7 +437,6 @@ nav,
 			border-radius: 5px;
 			height: 30%;
 			width: 40vw;
-			font-size: 1.2em;
 		}
 		@include tablet {
 			height: 3em;
@@ -350,29 +450,43 @@ nav,
 
 .contact-container {
 	font-family: $open-sans;
+	height: 125px;
+	margin-bottom: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4em;
 	@include phone {
 		flex-wrap: wrap;
 		height: 10vh;
-		margin: 2vw 0;
+		margin: 2vw 0 5vh 0;
 	}
 	@include tablet {
 		height: auto;
-		margin: 2em 0 4em 0;
+		margin: 2em 0 5em 0;
 		font-size: 1.6em;
 	}
 	div {
-		@include phone {
-			width: 100%;
-			margin: 1vh 0;
-		}
+		text-align: center;
 		&:first-child {
 			width: 60%;
+			@include phone {
+				width: 100%;
+				margin: 1vh 0;
+			}
 		}
 		&:last-child {
 			width: 40%;
+			@include phone {
+				width: 100%;
+				margin: 1vh 0;
+			}
 		}
 	}
 	a {
+		margin: 0;
+		color: black;
+		text-decoration: none;
 		@include phone {
 			font-size: 5vw;
 		}
